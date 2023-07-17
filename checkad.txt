@@ -1,2 +1,8 @@
 google.com
 bing.com
+api.steampowered.com
+public-ubiservices.ubi.com
+itch.io
+tera.enmasse.com
+discord.com
+stackoverflow.com

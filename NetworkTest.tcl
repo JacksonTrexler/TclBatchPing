@@ -13,8 +13,12 @@ puts "Pinging:"
 set pingCommand "ping"
 set pingCommandPass " -c 1 $i"
 foreach i $checkArray {
-	set pingResult [exec $pingCommand $i]
-	puts $pingResult
+	set pingFail [catch {exec $pingCommand $i} result]
+	if $pingFail {
+		puts "$i Fail"
+	} else {
+		puts "$i Success"
+	}
 }
 
 gets stdin dummy
